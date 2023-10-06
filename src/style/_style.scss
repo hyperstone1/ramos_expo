@@ -220,13 +220,15 @@
 	}
 }
 
+.label-text {
+	color: #1a1a1a;
+	font-size: 1.8rem;
+	line-height: normal;
+}
+
 .personal-data {
 	// .personal-data__text
 	&__text {
-		color: #1a1a1a;
-		font-size: 1.8rem;
-		line-height: normal;
-
 		a {
 			text-decoration: underline;
 			color: #fe921f;
@@ -363,11 +365,13 @@ body {
 		}
 	}
 
+	.label-text {
+		font-size: 3.2rem;
+	}
+
 	.personal-data {
 		// .personal-data__text
 		&__text {
-			font-size: 3.2rem;
-
 			a {
 				display: flex;
 			}
