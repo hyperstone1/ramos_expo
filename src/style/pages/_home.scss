@@ -256,7 +256,7 @@
     &-btn {
       position: absolute;
       top: 17.1rem;
-      left: 52rem;
+      left: 60rem;
       z-index: 2;
       &--text {
         position: absolute;
@@ -1904,9 +1904,12 @@
     }
   }
   .services {
+    &_container {
+      padding-bottom: 17rem;
+    }
     &__blocks {
       top: auto;
-      bottom: 0;
+      bottom: 4rem;
       right: -81rem;
       left: auto;
       &-item {
@@ -1928,6 +1931,8 @@
       &-bottom {
         padding-top: 5.6rem;
         flex-direction: column;
+        .services__list-text--description {
+        }
       }
     }
     &__list {
@@ -1944,6 +1949,11 @@
       &-item {
         width: 100%;
         gap: 1.6rem;
+        &--last {
+          .services__list-text--description {
+            width: 205px;
+          }
+        }
         &--column {
           gap: 7.4rem;
           flex-direction: column-reverse;
@@ -1969,8 +1979,16 @@
           }
         }
       }
+      &-btn {
+        position: absolute;
+        bottom: 3rem;
+        margin: 0;
+      }
       &-text {
         gap: 0.4rem;
+        &--description {
+          width: 55.2rem;
+        }
       }
     }
   }
