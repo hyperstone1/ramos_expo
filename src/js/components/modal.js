@@ -12,13 +12,8 @@ $(document).ready(function () {
 		$('body').addClass('lock');
 	})
 
-	$('.modal-back').on('click', () => {
-		closeModal()
-	})
-
-	$('.modal-exit').on('click', () => {
-		closeModal()
-	})
+	$('.modal-back').on('click', closeModal);
+	$('.modal-exit').on('click', closeModal);
 
 	$('.form').on('submit', (evt) => {
 		evt.preventDefault();
