@@ -536,13 +536,14 @@
   &_container {
     display: flex;
   }
-  &-mob {
-    display: none;
-  }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    &-mob {
+      display: none;
+    }
     &-row {
       display: flex;
       .advantages__main {
