@@ -1,6 +1,22 @@
-@import 'style/fonts';
-@import 'style/libs/set';
-@import 'style/style';
-@import 'style/components/header';
-@import 'style/components/footer';
-@import 'style/pages/home';
+@import "style/fonts";
+@import "style/libs/set";
+@import "style/style";
+@import "style/components/header";
+@import "style/components/footer";
+@import "style/components/modal";
+@import "style/pages/home";
+@import "style/pages/about";
+@import "style/pages/projects";
+@import "style/pages/contacts";
+
+.mobile {
+	display: none;
+}
+@media (max-width: 48em) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+}

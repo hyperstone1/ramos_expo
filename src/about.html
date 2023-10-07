@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>О компании</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container container">
+			<nav class="header__inner nav desktop">
+				<div class="header__left header-left">
+					<div class="header-left__link nav__link"><a href="about.html">О компании</a></div>
+					<div class="header-left__link nav__link"><a href="#">Услуги</a></div>
+					<div class="header-left__link nav__link"><a href="#">Выставочные стенды</a></div>
+				</div>
+				<div class="header__logo">
+					<a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+				</div>
+				<div class="header__right header-right">
+					<div class="header-right__nav">
+						<div class="header-right__link nav__link"><a href="projects.html">Портфолио</a></div>
+						<div class="header-right__link nav__link"><a href="contacts.html">Контакты</a></div>
+						<div class="header-right__link nav__link link-menu-btn">
+							<button type="button">Ru
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0.646423 1.35359L1.35353 0.646484L6.99998 6.29293L12.6464 0.646484L13.3535 1.35359L6.99998 7.70714L0.646423 1.35359Z"
+											fill="#242424" />
+									</svg>
+								</span>
+							</button>
+							<div class="header-right__link-menu link-menu desktop">
+								<div class="link-menu__inner">
+									<label class="link-menu__label lang-radio lang-radio--desktop">
+										<input type="radio" name="lang">
+										<p>Eng</p>
+									</label>
+									<label class="link-menu__label lang-radio lang-radio--desktop">
+										<input type="radio" name="lang">
+										<p>Cn</p>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="header-right__link long-btn" type="button" data-modal="application">Заказать звонок
+						<span></span></button>
+				</div>
+			</nav>
+			<div class="header__inner mobile">
+				<div class="header__left header-left">
+					<button class="header-left__burger burger-btn" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="header__logo">
+					<a href="#"><img src="./assets/images/logo.svg" alt=""></a>
+				</div>
+				<div class="header__right header-right">
+					<button class="header-right__call" type="button" data-modal="application">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M17.62 10.7501C17.19 10.7501 16.85 10.4001 16.85 9.9801C16.85 9.6101 16.48 8.8401 15.86 8.1701C15.25 7.5201 14.58 7.1401 14.02 7.1401C13.59 7.1401 13.25 6.7901 13.25 6.3701C13.25 5.9501 13.6 5.6001 14.02 5.6001C15.02 5.6001 16.07 6.1401 16.99 7.1101C17.85 8.0201 18.4 9.1501 18.4 9.9701C18.4 10.4001 18.05 10.7501 17.62 10.7501Z"
+								fill="#E84B0F" />
+							<path
+								d="M21.23 10.75C20.8 10.75 20.46 10.4 20.46 9.98C20.46 6.43 17.57 3.55 14.03 3.55C13.6 3.55 13.26 3.2 13.26 2.78C13.26 2.36 13.6 2 14.02 2C18.42 2 22 5.58 22 9.98C22 10.4 21.65 10.75 21.23 10.75Z"
+								fill="#E84B0F" />
+							<path
+								d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+								fill="#E84B0F" />
+							<path
+								d="M21.97 18.33C21.97 18.61 21.92 18.9 21.82 19.18C21.79 19.26 21.76 19.34 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C19.39 21.62 19.38 21.63 19.37 21.63C18.78 21.87 18.14 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C10.36 19 9.96998 18.71 9.59998 18.4L12.87 15.13C13.15 15.34 13.4 15.5 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+								fill="#E84B0F" />
+						</svg>
+					</button>
+				</div>
+				<div class="header__burger-menu burger-menu">
+					<div class="burger-menu__inner">
+						<div class="burger-menu__close burger-close-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path d="M20 20L4 4M20 4L4 20" stroke="#242424" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<nav class="burger-menu__nav nav">
+							<div class="nav__link"><a href="about.html">О компании</a></div>
+							<div class="nav__link"><a href="#">Услуги</a></div>
+							<div class="nav__link"><a href="#">Выставочные стенды</a></div>
+							<div class="nav__link"><a href="projects.html">Портфолио</a></div>
+							<div class="nav__link"><a href="contacts.html">Контакты</a></div>
+						</nav>
+						<div class="burger-menu__info">
+							<div class="burger-menu__info-content">
+								<a href="mailto:ramosexpo@mail.ru" class="burger-menu__info-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M17 3.5H7C4 3.5 2 5 2 8.5V15.5C2 19 4 20.5 7 20.5H17C20 20.5 22 19 22 15.5V8.5C22 5 20 3.5 17 3.5ZM17.47 9.59L14.34 12.09C13.68 12.62 12.84 12.88 12 12.88C11.16 12.88 10.31 12.62 9.66 12.09L6.53 9.59C6.21 9.33 6.16 8.85 6.41 8.53C6.67 8.21 7.14 8.15 7.46 8.41L10.59 10.91C11.35 11.52 12.64 11.52 13.4 10.91L16.53 8.41C16.85 8.15 17.33 8.2 17.58 8.53C17.84 8.85 17.79 9.33 17.47 9.59Z"
+											fill="#FE921F" />
+									</svg>
+									<span>ramosexpo@mail.ru</span>
+								</a>
+								<a href="tel: +7 (123) - 456 -56-56" class="burger-menu__info-item">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M17.62 10.7501C17.19 10.7501 16.85 10.4001 16.85 9.9801C16.85 9.6101 16.48 8.8401 15.86 8.1701C15.25 7.5201 14.58 7.1401 14.02 7.1401C13.59 7.1401 13.25 6.7901 13.25 6.3701C13.25 5.9501 13.6 5.6001 14.02 5.6001C15.02 5.6001 16.07 6.1401 16.99 7.1101C17.85 8.0201 18.4 9.1501 18.4 9.9701C18.4 10.4001 18.05 10.7501 17.62 10.7501Z"
+											fill="#FE921F" />
+										<path
+											d="M21.23 10.75C20.8 10.75 20.46 10.4 20.46 9.98C20.46 6.43 17.57 3.55 14.03 3.55C13.6 3.55 13.26 3.2 13.26 2.78C13.26 2.36 13.6 2 14.02 2C18.42 2 22 5.58 22 9.98C22 10.4 21.65 10.75 21.23 10.75Z"
+											fill="#FE921F" />
+										<path
+											d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+											fill="#FE921F" />
+										<path
+											d="M21.97 18.33C21.97 18.61 21.92 18.9 21.82 19.18C21.79 19.26 21.76 19.34 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C19.39 21.62 19.38 21.63 19.37 21.63C18.78 21.87 18.14 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C10.36 19 9.96998 18.71 9.59998 18.4L12.87 15.13C13.15 15.34 13.4 15.5 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+											fill="#FE921F" />
+									</svg>
+									<span>+7 (123) - 456 -56-56</span>
+								</a>
+							</div>
+							<div class="burger-menu__info-social">
+								<a class="burger-menu__social-item" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+										fill="none">
+										<path
+											d="M27.5 20.2375C27.5 24.7875 24.7875 27.5 20.2375 27.5H18.75C18.0625 27.5 17.5 26.9375 17.5 26.25V19.0375C17.5 18.7 17.775 18.4125 18.1125 18.4125L20.3125 18.375C20.4875 18.3625 20.6375 18.2375 20.675 18.0625L21.1125 15.675C21.15 15.45 20.975 15.2375 20.7375 15.2375L18.075 15.275C17.725 15.275 17.45 15 17.4375 14.6625L17.3875 11.6C17.3875 11.4 17.55 11.225 17.7625 11.225L20.7625 11.175C20.975 11.175 21.1375 11.0125 21.1375 10.8L21.0875 7.79999C21.0875 7.58749 20.925 7.425 20.7125 7.425L17.3375 7.47501C15.2625 7.51251 13.6125 9.2125 13.65 11.2875L13.7125 14.725C13.725 15.075 13.45 15.35 13.1 15.3625L11.6 15.3875C11.3875 15.3875 11.225 15.55 11.225 15.7625L11.2625 18.1375C11.2625 18.35 11.425 18.5125 11.6375 18.5125L13.1375 18.4875C13.4875 18.4875 13.7625 18.7625 13.775 19.1L13.8875 26.225C13.9 26.925 13.3375 27.5 12.6375 27.5H9.7625C5.2125 27.5 2.5 24.7875 2.5 20.225V9.7625C2.5 5.2125 5.2125 2.5 9.7625 2.5H20.2375C24.7875 2.5 27.5 5.2125 27.5 9.7625V20.2375Z"
+											fill="url(#paint0_linear_463_3161)" />
+										<defs>
+											<linearGradient id="paint0_linear_463_3161" x1="44.9222" y1="27.611"
+												x2="8.21339" y2="-8.91054" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#D61607" />
+												<stop offset="0.489583" stop-color="#F87717" />
+												<stop offset="1" stop-color="#FECE24" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+								<a class="burger-menu__social-item" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+										fill="none">
+										<path
+											d="M27.475 14.2626C27.05 7.01256 20.4625 1.42507 12.875 2.67507C7.64999 3.53757 3.4625 7.77505 2.65 13C2.175 16.025 2.80003 18.8876 4.16253 21.2501L3.05001 25.3876C2.80001 26.3251 3.66248 27.1751 4.58748 26.9126L8.6625 25.7876C10.5125 26.8751 12.675 27.5001 14.9875 27.5001C22.0375 27.5001 27.8875 21.2876 27.475 14.2626ZM21.1 19.6501C20.9875 19.8751 20.85 20.0876 20.675 20.2876C20.3625 20.6251 20.025 20.8751 19.65 21.0251C19.275 21.1876 18.8625 21.2626 18.425 21.2626C17.7875 21.2626 17.1 21.1126 16.3875 20.8001C15.6625 20.4876 14.95 20.075 14.2375 19.5625C13.5125 19.0375 12.8375 18.4501 12.1875 17.8126C11.5375 17.1626 10.9625 16.475 10.4375 15.7625C9.92498 15.05 9.5125 14.3375 9.2125 13.625C8.9125 12.9125 8.76252 12.2251 8.76252 11.5751C8.76252 11.1501 8.83751 10.7376 8.98751 10.3626C9.13751 9.97507 9.37503 9.62507 9.71253 9.31257C10.1125 8.91257 10.55 8.72507 11.0125 8.72507C11.1875 8.72507 11.3625 8.76257 11.525 8.83756C11.6875 8.91257 11.8375 9.02506 11.95 9.18756L13.4 11.2375C13.5125 11.4 13.6 11.5376 13.65 11.6751C13.7125 11.8126 13.7375 11.9375 13.7375 12.0625C13.7375 12.2125 13.6875 12.3626 13.6 12.5126C13.5125 12.6626 13.4 12.8126 13.25 12.9626L12.775 13.4625C12.7 13.5375 12.675 13.6126 12.675 13.7126C12.675 13.7626 12.6875 13.8126 12.7 13.8626C12.725 13.9126 12.7375 13.9501 12.75 13.9876C12.8625 14.2001 13.0625 14.4625 13.3375 14.7875C13.625 15.1125 13.925 15.4501 14.25 15.7751C14.5875 16.1126 14.9125 16.4125 15.25 16.7C15.575 16.975 15.85 17.1626 16.0625 17.2751C16.1 17.2876 16.1375 17.3125 16.175 17.325C16.225 17.35 16.275 17.3501 16.3375 17.3501C16.45 17.3501 16.525 17.3126 16.6 17.2376L17.075 16.7626C17.2375 16.6001 17.3875 16.4876 17.525 16.4126C17.675 16.3251 17.8125 16.275 17.975 16.275C18.1 16.275 18.225 16.3001 18.3625 16.3626C18.5 16.4251 18.65 16.5001 18.8 16.6126L20.875 18.0876C21.0375 18.2001 21.15 18.3376 21.225 18.4876C21.2875 18.6501 21.325 18.8 21.325 18.975C21.25 19.1875 21.2 19.4251 21.1 19.6501Z"
+											fill="url(#paint0_linear_463_3167)" />
+										<defs>
+											<linearGradient id="paint0_linear_463_3167" x1="44.92" y1="27.611"
+												x2="8.21037" y2="-8.91523" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#D61607" />
+												<stop offset="0.489583" stop-color="#F87717" />
+												<stop offset="1" stop-color="#FECE24" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+								<a class="burger-menu__social-item" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+										fill="none">
+										<path
+											d="M18.3412 3H10.6713C3.66625 3 2 4.66625 2 11.6588V19.3288C2 26.3325 3.65375 28 10.6588 28H18.3288C25.3325 28 27 26.3463 27 19.3412V11.6713C27 4.66625 25.3463 3 18.3412 3ZM22.1825 20.8375H20.3587C19.6688 20.8375 19.4613 20.2787 18.2238 19.0413C17.1438 18 16.6875 17.87 16.4137 17.87C16.0363 17.87 15.9325 17.9738 15.9325 18.495V20.135C15.9325 20.5788 15.7887 20.8387 14.63 20.8387C13.5054 20.7632 12.4149 20.4215 11.4482 19.8419C10.4816 19.2623 9.66646 18.4613 9.07 17.505C7.65396 15.7425 6.66868 13.6739 6.1925 11.4637C6.1925 11.19 6.29625 10.9425 6.8175 10.9425H8.64C9.10875 10.9425 9.2775 11.1512 9.46125 11.6325C10.3462 14.2375 11.8562 16.5025 12.4688 16.5025C12.7037 16.5025 12.8063 16.3988 12.8063 15.8125V13.13C12.7288 11.9062 12.0787 11.8025 12.0787 11.36C12.0871 11.2433 12.1406 11.1344 12.2279 11.0565C12.3151 10.9785 12.4293 10.9377 12.5463 10.9425H15.4113C15.8025 10.9425 15.9325 11.1375 15.9325 11.6063V15.2262C15.9325 15.6175 16.1012 15.7475 16.2188 15.7475C16.4537 15.7475 16.635 15.6175 17.065 15.1875C17.9886 14.0612 18.7432 12.8063 19.305 11.4625C19.3624 11.3011 19.4711 11.1629 19.6144 11.069C19.7577 10.9751 19.9278 10.9307 20.0988 10.9425H21.9225C22.4688 10.9425 22.585 11.2163 22.4688 11.6063C21.8056 13.0918 20.9851 14.5019 20.0212 15.8125C19.825 16.1125 19.7463 16.2688 20.0212 16.62C20.2025 16.8938 20.8412 17.4275 21.2712 17.935C21.8961 18.5583 22.415 19.2795 22.8075 20.07C22.9637 20.5775 22.7025 20.8375 22.1825 20.8375Z"
+											fill="url(#paint0_linear_463_3173)" />
+										<defs>
+											<linearGradient id="paint0_linear_463_3173" x1="44.4222" y1="28.111"
+												x2="7.71339" y2="-8.41054" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#D61607" />
+												<stop offset="0.489583" stop-color="#F87717" />
+												<stop offset="1" stop-color="#FECE24" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="burger-menu__lang">
+							<label class="burger-menu__lang-item lang-radio active">
+								<input type="radio" name="lang">
+								<p>Ru</p>
+							</label>
+							<label class="burger-menu__lang-item lang-radio">
+								<input type="radio" name="lang">
+								<p>En</p>
+							</label>
+						</div>
+					</div>
+					<div class="burger-menu__overlay burger-menu-overlay"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="about-intro">
+			<div class="about-intro__container container">
+				<div class="about-intro__inner">
+					<div class="about-intro__content">
+						<div class="about-intro__title title">Создаём выставки, которые оставляют след в истории</div>
+						<div class="about-intro__subtitle">event management</div>
+					</div>
+					<div class="about-intro__pictures">
+						<div class="about-intro__img about-intro__img--1">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-1.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-1.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--2">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-2.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-2.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--3">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-3.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-3.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--4 desktop">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-4.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-4.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--5 desktop">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-5.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-5.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--6">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-6.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-6.jpg" alt="">
+							</picture>
+						</div>
+						<div class="about-intro__img about-intro__img--7">
+							<picture>
+								<source srcset="./assets/images/about/intro/intro-img-7.webp" type="image/webp">
+								<img src="./assets/images/about/intro/intro-img-7.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-business">
+			<div class="about-business__container container">
+				<div class="about-business__inner">
+					<div class="about-business__section section_name">чем мы занимаемся</div>
+					<div class="about-business__main content">
+						<div class="about-business__title title">Развиваем бизнес наших клиентов, реализуя выставочные,
+							рекламные, event и digital проекты</div>
+						<div class="about-business__content">
+							<div class="about-business__item">
+								<div class="about-business__text"><span>Мы создаем мероприятия</span>, которые
+									объединяют и
+									вдохновляют людей, предоставляя платформу для обмена идеями, искусством и
+									инновациями. Наше стремление к качеству и внимание к деталям делают каждую выставку
+									уникальным событием для наших клиентов и посетителей.</div>
+								<button class="long-btn" type="button">Услуги<span></span></button>
+							</div>
+							<div class="about-business__item">
+								<div class="about-business__text"><span>Мы производим любые эксклюзивные выставочные
+										стенды</span>, а
+									также различное мультимедийное оборудование, мебель. Занимаемся написанием
+									программного обеспечения, профессиональным созданием аудиовизуального контента.
+								</div>
+								<button class="long-btn" type="button">Выставочные стенды<span></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-advantages">
+			<div class="about-advantages__container container">
+				<div class="about-advantages__inner">
+					<div class="about-advantages__section section_name">Наши преимущества</div>
+					<div class="about-advantages__main content">
+						<div class="about-advantages__title title">Предлагаем комплексные решения ваших задач</div>
+						<div class="about-advantages__content desktop">
+							<div class="about-advantages__item">
+								<div class="about-advantages__item-wrapper">
+									<div class="about-advantages__img">
+										<picture>
+											<source srcset="./assets/images/about/advantages/advantages-img-3.webp"
+												type="image/webp">
+											<img src="./assets/images/about/advantages/advantages-img-3.jpg" alt="">
+										</picture>
+									</div>
+									<div class="about-advantages__text"><span>Творческий</span> подход</div>
+								</div>
+								<div class="about-advantages__item-wrapper">
+									<div class="about-advantages__text">Инновационные решения</div>
+									<div class="about-advantages__img">
+										<picture>
+											<source srcset="./assets/images/about/advantages/advantages-img-2.webp"
+												type="image/webp">
+											<img src="./assets/images/about/advantages/advantages-img-2.jpg" alt="">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__text">Широкая сеть контактов</div>
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-4.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-4.jpg" alt="">
+									</picture>
+								</div>
+								<div class="about-advantages__text"><span>Экспертное</span> знание рынка</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-1.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-1.jpg" alt="">
+									</picture>
+								</div>
+								<div class="about-advantages__text"><span>Маркетинговая</span> поддержка</div>
+								<div class="about-advantages__text">международная деятельность</div>
+							</div>
+						</div>
+						<div class="about-advantages__content mobile">
+							<div class="about-advantages__item">
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-3.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-3.jpg" alt="">
+									</picture>
+								</div>
+								<div class="about-advantages__text"><span>Творческий</span> подход</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__text">Инновационные решения</div>
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-2.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-2.jpg" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__text">Широкая сеть контактов</div>
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-4.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-4.jpg" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__text"><span>Экспертное</span> знание рынка</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__img">
+									<picture>
+										<source srcset="./assets/images/about/advantages/advantages-img-1.webp"
+											type="image/webp">
+										<img src="./assets/images/about/advantages/advantages-img-1.jpg" alt="">
+									</picture>
+								</div>
+								<div class="about-advantages__text"><span>Маркетинговая</span> поддержка</div>
+							</div>
+							<div class="about-advantages__item">
+								<div class="about-advantages__text">международная деятельность</div>
+							</div>
+						</div>
+						<a class="about-advantages__btn btn" href="#">
+							<div class="btn--text">портфолио</div>
+							<svg xmlns="http://www.w3.org/2000/svg" width="164" height="163" viewBox="0 0 164 163"
+								fill="none">
+								<path
+									d="M79.2023 1.73781C80.7571 0.216274 83.2429 0.216274 84.7977 1.73781L93.2028 9.96306C94.3606 11.0961 96.0875 11.4189 97.5765 10.7806L108.385 6.1471C110.385 5.28997 112.703 6.18792 113.603 8.16837L118.469 18.8745C119.139 20.3493 120.633 21.2741 122.252 21.2168L134.005 20.8007C136.179 20.7238 138.016 22.3984 138.14 24.5703L138.81 36.3113C138.902 37.9287 139.961 39.3307 141.491 39.8621L152.601 43.7197C154.656 44.4333 155.764 46.6584 155.095 48.7284L151.478 59.9187C150.98 61.4602 151.461 63.1499 152.696 64.1983L161.662 71.8086C163.32 73.2164 163.55 75.6915 162.178 77.3801L154.763 86.5083C153.742 87.7657 153.58 89.515 154.353 90.9387L159.964 101.274C161.002 103.186 160.322 105.577 158.433 106.656L148.221 112.489C146.815 113.293 146.031 114.865 146.238 116.472L147.737 128.136C148.014 130.294 146.516 132.278 144.365 132.601L132.736 134.352C131.134 134.593 129.835 135.777 129.447 137.35L126.631 148.768C126.11 150.88 123.997 152.188 121.874 151.713L110.398 149.145C108.817 148.791 107.179 149.425 106.249 150.752L99.4982 160.382C98.2494 162.163 95.806 162.62 93.9981 161.41L84.2247 154.869C82.8784 153.968 81.1216 153.968 79.7753 154.869L70.0019 161.41C68.194 162.62 65.7506 162.163 64.5018 160.382L57.7512 150.752C56.8213 149.425 55.1831 148.791 53.6022 149.145L42.126 151.713C40.0031 152.188 37.8897 150.88 37.3688 148.768L34.5526 137.35C34.1647 135.777 32.8664 134.593 31.2645 134.352L19.6354 132.601C17.4842 132.278 15.9862 130.294 16.2634 128.136L17.7621 116.472C17.9685 114.865 17.1855 113.293 15.7788 112.489L5.56739 106.656C3.67844 105.577 2.99819 103.186 4.03615 101.274L9.64723 90.9387C10.4202 89.515 10.2581 87.7657 9.23669 86.5083L1.82206 77.3801C0.450472 75.6915 0.679828 73.2164 2.33833 71.8086L11.304 64.1983C12.5391 63.1499 13.0198 61.4602 12.5217 59.9187L8.9052 48.7284C8.23622 46.6584 9.34421 44.4333 11.3993 43.7197L22.5087 39.8621C24.039 39.3307 25.0978 37.9287 25.1901 36.3113L25.8602 24.5703C25.9842 22.3984 27.8212 20.7238 29.9952 20.8007L41.748 21.2168C43.367 21.2741 44.8606 20.3493 45.531 18.8745L50.3972 8.16837C51.2974 6.18792 53.6152 5.28997 55.6147 6.1471L66.4235 10.7806C67.9125 11.4189 69.6394 11.0961 70.7972 9.96306L79.2023 1.73781Z"
+									fill="url(#paint0_linear_201_76)" />
+								<defs>
+									<linearGradient id="paint0_linear_201_76" x1="280.683" y1="165.737" x2="36.9369"
+										y2="-76.766" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#D61607" />
+										<stop offset="0.489583" stop-color="#F87717" />
+										<stop offset="1" stop-color="#FECE24" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-feedback">
+			<div class="about-feedback__container container">
+				<div class="about-feedback__inner">
+					<div class="about-feedback__section section_name"></div>
+					<div class="about-feedback__main content">
+						<div class="about-feedback__left">
+							<div class="about-feedback__title subtitle">Оставьте заявку, чтобы обсудить ваш проект</div>
+							<div class="about-feedback__description description">Заполните форму, и мы свяжемся с вами в
+								ближайшее
+								время</div>
+						</div>
+						<div class="about-feedback__right">
+							<form class="about-feedback__form form">
+								<div class="form__title desktop">Форма обратной связи</div>
+								<div class="form__content">
+									<div class="form__item form-item">
+										<label class="form-item__label label-input">
+											<p class="label-input__placeholder">Имя</p>
+											<input class="input" type="text" required placeholder="Введите Вашe имя">
+										</label>
+										<label class="form-item__label label-input">
+											<p class="label-input__placeholder">Номер</p>
+											<input class="input" type="tel" required placeholder="+7 (___) __-__">
+										</label>
+									</div>
+									<div class="form__item form-item form-item--width--100">
+										<label class="form-item__label label-input">
+											<p class="label-input__placeholder">Комментарий</p>
+											<textarea class="textarea" type="text" required
+												placeholder="Введите Ваш вопрос"></textarea>
+										</label>
+									</div>
+									<div class="form__personal-data personal-data">
+										<label class="personal-data__label label-checkbox">
+											<input type="checkbox" checked>
+											<span class="custom-checkbox"></span>
+										</label>
+										<p class="personal-data__text label-text">Я согласен <a href="#">на обработку
+												персональных данных</a></p>
+									</div>
+								</div>
+								<button class="form__btn long-btn submit-btn"
+									type="submit">Отправить<span></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="application-modal modal">
+			<div class="modal-back"></div>
+			<div class="modal-wrapper">
+				<div class="modal-exit">
+					<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+						<path
+							d="M22.0625 10.606L16.0625 16.606M16.0625 16.606L22.0625 22.606M16.0625 16.606L10.0625 10.606M16.0625 16.606L10.0625 22.606"
+							stroke="#242424" />
+					</svg>
+				</div>
+				<div class="application-modal__content modal-content modal-content--first active">
+					<div class="application-modal__header">
+						<div class="application-modal__title subtitle">Оставьте ваш номер телефона</div>
+						<div class="application-modal__description description">Наш менеджер свяжемся с вами в ближайшее
+							время</div>
+					</div>
+					<form class="application-modal__form form">
+						<div class="application-modal__form-item form-item form-item--width--100">
+							<label class="form-item__label label-input">
+								<p class="label-input__placeholder">Номер</p>
+								<input class="input" type="tel" required placeholder="+7 (___) __-__">
+							</label>
+						</div>
+						<button class="form__btn long-btn submit-btn" type="submit">Отправить<span></span></button>
+					</form>
+				</div>
+				<div class="application-modal__content modal-content modal-content--second">
+					<div class="application-modal__header">
+						<div class="application-modal__title subtitle">Спасибо, что оставили заявку!</div>
+						<div class="application-modal__description description">Наш менеджер свяжемся с вами в ближайшее
+							время</div>
+					</div>
+					<a class="application-modal__btn btn" href="index.html">
+						<div class="btn--text">На главную</div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="164" height="163" viewBox="0 0 164 163"
+							fill="none">
+							<path
+								d="M79.2023 1.73781C80.7571 0.216274 83.2429 0.216274 84.7977 1.73781L93.2028 9.96306C94.3606 11.0961 96.0875 11.4189 97.5765 10.7806L108.385 6.1471C110.385 5.28997 112.703 6.18792 113.603 8.16837L118.469 18.8745C119.139 20.3493 120.633 21.2741 122.252 21.2168L134.005 20.8007C136.179 20.7238 138.016 22.3984 138.14 24.5703L138.81 36.3113C138.902 37.9287 139.961 39.3307 141.491 39.8621L152.601 43.7197C154.656 44.4333 155.764 46.6584 155.095 48.7284L151.478 59.9187C150.98 61.4602 151.461 63.1499 152.696 64.1983L161.662 71.8086C163.32 73.2164 163.55 75.6915 162.178 77.3801L154.763 86.5083C153.742 87.7657 153.58 89.515 154.353 90.9387L159.964 101.274C161.002 103.186 160.322 105.577 158.433 106.656L148.221 112.489C146.815 113.293 146.031 114.865 146.238 116.472L147.737 128.136C148.014 130.294 146.516 132.278 144.365 132.601L132.736 134.352C131.134 134.593 129.835 135.777 129.447 137.35L126.631 148.768C126.11 150.88 123.997 152.188 121.874 151.713L110.398 149.145C108.817 148.791 107.179 149.425 106.249 150.752L99.4982 160.382C98.2494 162.163 95.806 162.62 93.9981 161.41L84.2247 154.869C82.8784 153.968 81.1216 153.968 79.7753 154.869L70.0019 161.41C68.194 162.62 65.7506 162.163 64.5018 160.382L57.7512 150.752C56.8213 149.425 55.1831 148.791 53.6022 149.145L42.126 151.713C40.0031 152.188 37.8897 150.88 37.3688 148.768L34.5526 137.35C34.1647 135.777 32.8664 134.593 31.2645 134.352L19.6354 132.601C17.4842 132.278 15.9862 130.294 16.2634 128.136L17.7621 116.472C17.9685 114.865 17.1855 113.293 15.7788 112.489L5.56739 106.656C3.67844 105.577 2.99819 103.186 4.03615 101.274L9.64723 90.9387C10.4202 89.515 10.2581 87.7657 9.23669 86.5083L1.82206 77.3801C0.450472 75.6915 0.679828 73.2164 2.33833 71.8086L11.304 64.1983C12.5391 63.1499 13.0198 61.4602 12.5217 59.9187L8.9052 48.7284C8.23622 46.6584 9.34421 44.4333 11.3993 43.7197L22.5087 39.8621C24.039 39.3307 25.0978 37.9287 25.1901 36.3113L25.8602 24.5703C25.9842 22.3984 27.8212 20.7238 29.9952 20.8007L41.748 21.2168C43.367 21.2741 44.8606 20.3493 45.531 18.8745L50.3972 8.16837C51.2974 6.18792 53.6152 5.28997 55.6147 6.1471L66.4235 10.7806C67.9125 11.4189 69.6394 11.0961 70.7972 9.96306L79.2023 1.73781Z"
+								fill="url(#paint0_linear_201_76)" />
+							<defs>
+								<linearGradient id="paint0_linear_201_76" x1="280.683" y1="165.737" x2="36.9369"
+									y2="-76.766" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#D61607" />
+									<stop offset="0.489583" stop-color="#F87717" />
+									<stop offset="1" stop-color="#FECE24" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="footer__inner">
+				<div class="footer__top footer-top">
+					<div class="footer-top__logo">
+						<a href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+					</div>
+					<nav class="footer-top__nav nav">
+						<div class="nav__link"><a href="about.html">О компании</a></div>
+						<div class="nav__link"><a href="#">Услуги</a></div>
+						<div class="nav__link"><a href="#">Выставочные стенды</a></div>
+						<div class="nav__link"><a href="projects.html">Портфолио</a></div>
+						<div class="nav__link"><a href="contacts.html">Контакты</a></div>
+					</nav>
+					<div class="footer-bottom__info info mobile">
+						<a class="info__item" href="mailto:ramosexpo@mail.ru">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M17 3.5H7C4 3.5 2 5 2 8.5V15.5C2 19 4 20.5 7 20.5H17C20 20.5 22 19 22 15.5V8.5C22 5 20 3.5 17 3.5ZM17.47 9.59L14.34 12.09C13.68 12.62 12.84 12.88 12 12.88C11.16 12.88 10.31 12.62 9.66 12.09L6.53 9.59C6.21 9.33 6.16 8.85 6.41 8.53C6.67 8.21 7.14 8.15 7.46 8.41L10.59 10.91C11.35 11.52 12.64 11.52 13.4 10.91L16.53 8.41C16.85 8.15 17.33 8.2 17.58 8.53C17.84 8.85 17.79 9.33 17.47 9.59Z"
+									fill="#FE921F" />
+							</svg>
+							<span>ramosexpo@mail.ru</span>
+						</a>
+						<a class="info__item" href="tel:+7 (123) - 456 -56-56">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M17.62 10.7501C17.19 10.7501 16.85 10.4001 16.85 9.9801C16.85 9.6101 16.48 8.8401 15.86 8.1701C15.25 7.5201 14.58 7.1401 14.02 7.1401C13.59 7.1401 13.25 6.7901 13.25 6.3701C13.25 5.9501 13.6 5.6001 14.02 5.6001C15.02 5.6001 16.07 6.1401 16.99 7.1101C17.85 8.0201 18.4 9.1501 18.4 9.9701C18.4 10.4001 18.05 10.7501 17.62 10.7501Z"
+									fill="#FE921F" />
+								<path
+									d="M21.23 10.75C20.8 10.75 20.46 10.4 20.46 9.98C20.46 6.43 17.57 3.55 14.03 3.55C13.6 3.55 13.26 3.2 13.26 2.78C13.26 2.36 13.6 2 14.02 2C18.42 2 22 5.58 22 9.98C22 10.4 21.65 10.75 21.23 10.75Z"
+									fill="#FE921F" />
+								<path
+									d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+									fill="#FE921F" />
+								<path
+									d="M21.97 18.33C21.97 18.61 21.92 18.9 21.82 19.18C21.79 19.26 21.76 19.34 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C19.39 21.62 19.38 21.63 19.37 21.63C18.78 21.87 18.14 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C10.36 19 9.96998 18.71 9.59998 18.4L12.87 15.13C13.15 15.34 13.4 15.5 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+									fill="#FE921F" />
+							</svg>
+							<span>+7 (123) - 456 -56-56</span>
+						</a>
+					</div>
+					<div class="footer-top__social social">
+						<a class="social__item" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+								fill="none">
+								<path
+									d="M27.5 20.2375C27.5 24.7875 24.7875 27.5 20.2375 27.5H18.75C18.0625 27.5 17.5 26.9375 17.5 26.25V19.0375C17.5 18.7 17.775 18.4125 18.1125 18.4125L20.3125 18.375C20.4875 18.3625 20.6375 18.2375 20.675 18.0625L21.1125 15.675C21.15 15.45 20.975 15.2375 20.7375 15.2375L18.075 15.275C17.725 15.275 17.45 15 17.4375 14.6625L17.3875 11.6C17.3875 11.4 17.55 11.225 17.7625 11.225L20.7625 11.175C20.975 11.175 21.1375 11.0125 21.1375 10.8L21.0875 7.79999C21.0875 7.58749 20.925 7.425 20.7125 7.425L17.3375 7.47501C15.2625 7.51251 13.6125 9.2125 13.65 11.2875L13.7125 14.725C13.725 15.075 13.45 15.35 13.1 15.3625L11.6 15.3875C11.3875 15.3875 11.225 15.55 11.225 15.7625L11.2625 18.1375C11.2625 18.35 11.425 18.5125 11.6375 18.5125L13.1375 18.4875C13.4875 18.4875 13.7625 18.7625 13.775 19.1L13.8875 26.225C13.9 26.925 13.3375 27.5 12.6375 27.5H9.7625C5.2125 27.5 2.5 24.7875 2.5 20.225V9.7625C2.5 5.2125 5.2125 2.5 9.7625 2.5H20.2375C24.7875 2.5 27.5 5.2125 27.5 9.7625V20.2375Z"
+									fill="url(#paint0_linear_745_691)" />
+								<defs>
+									<linearGradient id="paint0_linear_745_691" x1="44.9222" y1="27.611" x2="8.21339"
+										y2="-8.91054" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#D61607" />
+										<stop offset="0.489583" stop-color="#F87717" />
+										<stop offset="1" stop-color="#FECE24" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+								fill="none">
+								<path
+									d="M27.475 14.2626C27.05 7.01256 20.4625 1.42507 12.875 2.67507C7.64999 3.53757 3.4625 7.77505 2.65 13C2.175 16.025 2.80003 18.8876 4.16253 21.2501L3.05001 25.3876C2.80001 26.3251 3.66248 27.1751 4.58748 26.9126L8.6625 25.7876C10.5125 26.8751 12.675 27.5001 14.9875 27.5001C22.0375 27.5001 27.8875 21.2876 27.475 14.2626ZM21.1 19.6501C20.9875 19.8751 20.85 20.0876 20.675 20.2876C20.3625 20.6251 20.025 20.8751 19.65 21.0251C19.275 21.1876 18.8625 21.2626 18.425 21.2626C17.7875 21.2626 17.1 21.1126 16.3875 20.8001C15.6625 20.4876 14.95 20.075 14.2375 19.5625C13.5125 19.0375 12.8375 18.4501 12.1875 17.8126C11.5375 17.1626 10.9625 16.475 10.4375 15.7625C9.92498 15.05 9.5125 14.3375 9.2125 13.625C8.9125 12.9125 8.76252 12.2251 8.76252 11.5751C8.76252 11.1501 8.83751 10.7376 8.98751 10.3626C9.13751 9.97507 9.37503 9.62507 9.71253 9.31257C10.1125 8.91257 10.55 8.72507 11.0125 8.72507C11.1875 8.72507 11.3625 8.76257 11.525 8.83756C11.6875 8.91257 11.8375 9.02506 11.95 9.18756L13.4 11.2375C13.5125 11.4 13.6 11.5376 13.65 11.6751C13.7125 11.8126 13.7375 11.9375 13.7375 12.0625C13.7375 12.2125 13.6875 12.3626 13.6 12.5126C13.5125 12.6626 13.4 12.8126 13.25 12.9626L12.775 13.4625C12.7 13.5375 12.675 13.6126 12.675 13.7126C12.675 13.7626 12.6875 13.8126 12.7 13.8626C12.725 13.9126 12.7375 13.9501 12.75 13.9876C12.8625 14.2001 13.0625 14.4625 13.3375 14.7875C13.625 15.1125 13.925 15.4501 14.25 15.7751C14.5875 16.1126 14.9125 16.4125 15.25 16.7C15.575 16.975 15.85 17.1626 16.0625 17.2751C16.1 17.2876 16.1375 17.3125 16.175 17.325C16.225 17.35 16.275 17.3501 16.3375 17.3501C16.45 17.3501 16.525 17.3126 16.6 17.2376L17.075 16.7626C17.2375 16.6001 17.3875 16.4876 17.525 16.4126C17.675 16.3251 17.8125 16.275 17.975 16.275C18.1 16.275 18.225 16.3001 18.3625 16.3626C18.5 16.4251 18.65 16.5001 18.8 16.6126L20.875 18.0876C21.0375 18.2001 21.15 18.3376 21.225 18.4876C21.2875 18.6501 21.325 18.8 21.325 18.975C21.25 19.1875 21.2 19.4251 21.1 19.6501Z"
+									fill="url(#paint0_linear_745_697)" />
+								<defs>
+									<linearGradient id="paint0_linear_745_697" x1="44.92" y1="27.611" x2="8.21037"
+										y2="-8.91523" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#D61607" />
+										<stop offset="0.489583" stop-color="#F87717" />
+										<stop offset="1" stop-color="#FECE24" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</a>
+						<a class="social__item" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+								fill="none">
+								<path
+									d="M18.3412 3H10.6713C3.66625 3 2 4.66625 2 11.6588V19.3288C2 26.3325 3.65375 28 10.6588 28H18.3288C25.3325 28 27 26.3463 27 19.3412V11.6713C27 4.66625 25.3463 3 18.3412 3ZM22.1825 20.8375H20.3587C19.6688 20.8375 19.4613 20.2787 18.2238 19.0413C17.1438 18 16.6875 17.87 16.4137 17.87C16.0363 17.87 15.9325 17.9738 15.9325 18.495V20.135C15.9325 20.5788 15.7887 20.8387 14.63 20.8387C13.5054 20.7632 12.4149 20.4215 11.4482 19.8419C10.4816 19.2623 9.66646 18.4613 9.07 17.505C7.65396 15.7425 6.66868 13.6739 6.1925 11.4637C6.1925 11.19 6.29625 10.9425 6.8175 10.9425H8.64C9.10875 10.9425 9.2775 11.1512 9.46125 11.6325C10.3462 14.2375 11.8562 16.5025 12.4688 16.5025C12.7037 16.5025 12.8063 16.3988 12.8063 15.8125V13.13C12.7288 11.9062 12.0787 11.8025 12.0787 11.36C12.0871 11.2433 12.1406 11.1344 12.2279 11.0565C12.3151 10.9785 12.4293 10.9377 12.5463 10.9425H15.4113C15.8025 10.9425 15.9325 11.1375 15.9325 11.6063V15.2262C15.9325 15.6175 16.1012 15.7475 16.2188 15.7475C16.4537 15.7475 16.635 15.6175 17.065 15.1875C17.9886 14.0612 18.7432 12.8063 19.305 11.4625C19.3624 11.3011 19.4711 11.1629 19.6144 11.069C19.7577 10.9751 19.9278 10.9307 20.0988 10.9425H21.9225C22.4688 10.9425 22.585 11.2163 22.4688 11.6063C21.8056 13.0918 20.9851 14.5019 20.0212 15.8125C19.825 16.1125 19.7463 16.2688 20.0212 16.62C20.2025 16.8938 20.8412 17.4275 21.2712 17.935C21.8961 18.5583 22.415 19.2795 22.8075 20.07C22.9637 20.5775 22.7025 20.8375 22.1825 20.8375Z"
+									fill="url(#paint0_linear_745_703)" />
+								<defs>
+									<linearGradient id="paint0_linear_745_703" x1="44.4222" y1="28.111" x2="7.71339"
+										y2="-8.41054" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#D61607" />
+										<stop offset="0.489583" stop-color="#F87717" />
+										<stop offset="1" stop-color="#FECE24" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__copyright">© 2016 - 2023 «Рамос Экспо» — проведение рекламных кампаний
+					</div>
+					<div class="footer-bottom__info info desktop">
+						<a class="info__item" href="mailto:ramosexpo@mail.ru">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M17 3.5H7C4 3.5 2 5 2 8.5V15.5C2 19 4 20.5 7 20.5H17C20 20.5 22 19 22 15.5V8.5C22 5 20 3.5 17 3.5ZM17.47 9.59L14.34 12.09C13.68 12.62 12.84 12.88 12 12.88C11.16 12.88 10.31 12.62 9.66 12.09L6.53 9.59C6.21 9.33 6.16 8.85 6.41 8.53C6.67 8.21 7.14 8.15 7.46 8.41L10.59 10.91C11.35 11.52 12.64 11.52 13.4 10.91L16.53 8.41C16.85 8.15 17.33 8.2 17.58 8.53C17.84 8.85 17.79 9.33 17.47 9.59Z"
+									fill="#FE921F" />
+							</svg>
+							<span>ramosexpo@mail.ru</span>
+						</a>
+						<a class="info__item" href="tel:+7 (123) - 456 -56-56">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path
+									d="M17.62 10.7501C17.19 10.7501 16.85 10.4001 16.85 9.9801C16.85 9.6101 16.48 8.8401 15.86 8.1701C15.25 7.5201 14.58 7.1401 14.02 7.1401C13.59 7.1401 13.25 6.7901 13.25 6.3701C13.25 5.9501 13.6 5.6001 14.02 5.6001C15.02 5.6001 16.07 6.1401 16.99 7.1101C17.85 8.0201 18.4 9.1501 18.4 9.9701C18.4 10.4001 18.05 10.7501 17.62 10.7501Z"
+									fill="#FE921F" />
+								<path
+									d="M21.23 10.75C20.8 10.75 20.46 10.4 20.46 9.98C20.46 6.43 17.57 3.55 14.03 3.55C13.6 3.55 13.26 3.2 13.26 2.78C13.26 2.36 13.6 2 14.02 2C18.42 2 22 5.58 22 9.98C22 10.4 21.65 10.75 21.23 10.75Z"
+									fill="#FE921F" />
+								<path
+									d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+									fill="#FE921F" />
+								<path
+									d="M21.97 18.33C21.97 18.61 21.92 18.9 21.82 19.18C21.79 19.26 21.76 19.34 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C19.39 21.62 19.38 21.63 19.37 21.63C18.78 21.87 18.14 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C10.36 19 9.96998 18.71 9.59998 18.4L12.87 15.13C13.15 15.34 13.4 15.5 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+									fill="#FE921F" />
+							</svg>
+							<span>+7 (123) - 456 -56-56</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+
+</html>
