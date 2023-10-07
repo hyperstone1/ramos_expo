@@ -13,7 +13,7 @@ const entryPoints = {
 	index: path.resolve(__dirname, 'src', 'index.js'),
 	about: path.resolve(__dirname, 'src', 'index.js'),
 	projects: path.resolve(__dirname, 'src', 'index.js'),
-	// lamps: path.resolve(__dirname, 'src', 'index.js'),
+	contacts: path.resolve(__dirname, 'src', 'index.js'),
 	// chairs: path.resolve(__dirname, 'src', 'index.js'),
 	// tables: path.resolve(__dirname, 'src', 'index.js'),
 	//   contacts: path.resolve(__dirname, 'src', 'index.js'),
