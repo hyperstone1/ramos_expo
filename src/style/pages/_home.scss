@@ -271,7 +271,7 @@
         display: flex;
         gap: 2rem;
         position: absolute;
-        top: 68%;
+        top: 55.2%;
         left: 15rem;
         transform: translate(0, -50%);
         font-family: 'Akrobat';
@@ -291,8 +291,8 @@
       }
       &--subtitle {
         position: absolute;
-        top: 78%;
-        right: 29.7rem;
+        top: 66%;
+        right: 27.7rem;
         transform: translate(0, -50%);
         font-size: 1.6rem;
         font-weight: 700;
@@ -315,6 +315,7 @@
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
       &.next_1 {
         display: block;
@@ -322,7 +323,7 @@
         display: block;
         width: 22.2rem;
         height: 25.4rem;
-        top: 49.8rem;
+        top: 51.8rem;
         right: 50rem;
         animation: appearSlide1 1s cubic-bezier(0.39, 0.575, 0.565, 1);
       }
