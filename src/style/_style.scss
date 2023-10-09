@@ -7,20 +7,20 @@
   margin-bottom: 10rem;
 }
 stop {
-	transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 .btn {
-	position: relative;
-	display: flex;
-	width: 16.6rem;
-	height: 16.6rem;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
+  position: relative;
+  display: flex;
+  width: 16.6rem;
+  height: 16.6rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 
   &--text {
     position: absolute;
@@ -49,61 +49,57 @@ stop {
 }
 
 .long-btn {
-	color: #e84b0f;
-	font-family: "Gilroy";
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 2.4rem; /* 133.333% */
+  color: #e84b0f;
+  font-family: 'Gilroy';
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.4rem; /* 133.333% */
 
-	transition:
-		background 0.2s ease-out,
-		color 0.2s ease-out;
+  transition: background 0.2s ease-out, color 0.2s ease-out;
 
-	padding: 1.4rem 2.4rem;
-	border-radius: 10rem;
-	border: 0.1rem solid #fe921f;
+  padding: 1.4rem 2.4rem;
+  border-radius: 10rem;
+  border: 0.1rem solid #fe921f;
 
-	display: flex;
-	align-items: center;
-	gap: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 
-	span {
-		display: block;
-		position: relative;
-		width: 2.4rem;
-		height: 2.4rem;
-		transform: rotate(45deg);
+  span {
+    display: block;
+    position: relative;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: rotate(45deg);
 
-		&::after {
-			content: "";
-			width: 1rem;
-			height: 1rem;
-			background-color: #e84b0f;
+    &::after {
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      background-color: #e84b0f;
 
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
 
-			transition: background 0.2s ease-out;
-			transform: translate(-50%, -50%);
-		}
-	}
+      transition: background 0.2s ease-out;
+      transform: translate(-50%, -50%);
+    }
+  }
 
-	&:hover,
-	&:focus-visible {
-		transition:
-			background 0.2s ease-out,
-			color 0.2s ease-out;
-		background-color: #e84b0f;
-		color: #fff;
+  &:hover,
+  &:focus-visible {
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+    background-color: #e84b0f;
+    color: #fff;
 
-		span::after {
-			background-color: #fff;
-			transition: background 0.2s ease-out;
-		}
-	}
+    span::after {
+      background-color: #fff;
+      transition: background 0.2s ease-out;
+    }
+  }
 
   &:disabled {
     cursor: default;
@@ -118,34 +114,34 @@ stop {
 }
 
 .content {
-	width: 120.6rem;
-	&_container {
-		display: flex;
-		justify-content: space-between;
-	}
+  width: 120.6rem;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .description {
-	color: #9d9d9d;
-	font-size: 1.8rem;
-	font-weight: 500;
-	line-height: normal;
+  color: #9d9d9d;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
 }
 .section_name {
-	margin-top: 3.6rem;
-	flex: 1;
-	color: #e7284a;
-	font-size: 1.6rem;
-	font-weight: 500;
-	line-height: normal;
-	text-transform: uppercase;
+  margin-top: 3.6rem;
+  flex: 1;
+  color: #e7284a;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .subtitle {
-	color: #242424;
-	font-family: "Akrobat";
-	font-size: 3.4rem;
-	font-weight: 700;
-	line-height: normal;
+  color: #242424;
+  font-family: 'Akrobat';
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: normal;
 }
 .description {
   color: #9d9d9d;
@@ -284,15 +280,15 @@ stop {
 }
 
 main {
-	padding-top: 13.3rem;
-	overflow: hidden;
+  padding-top: 13.3rem;
+  overflow: hidden;
 }
 
 body {
-	&.lock {
-		touch-action: none;
-		overflow: hidden;
-	}
+  &.lock {
+    touch-action: none;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 48em) {
@@ -342,8 +338,8 @@ body {
     flex: 1;
     font-size: 2.8rem;
   }
-  .block_name{
-	  margin-bottom: 2.4rem;
+  .block_name {
+    margin-bottom: 2.4rem;
   }
   .form {
     &__title {
