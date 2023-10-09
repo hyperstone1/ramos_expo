@@ -32,6 +32,8 @@ $(document).ready(function () {
 
 	$(window).resize(closeBurgerMenu);
 	$(window).scroll(backgroundHeader);
+	backgroundHeader();
+	closeBurgerMenu();
 	$('.burger-menu-overlay').on('click', closeBurgerMenu);
 	$('.burger-close-btn').on('click', closeBurgerMenu);
 })
