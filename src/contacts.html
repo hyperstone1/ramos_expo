@@ -261,25 +261,26 @@
 							<div class="form__item form-item">
 								<label class="form-item__label label-input">
 									<p class="label-input__placeholder">Имя</p>
-									<input class="input" type="text" required placeholder="Введите Вашe имя">
+									<input class="input" type="text" placeholder="Введите Вашe имя"
+										data-required="true">
 								</label>
 								<label class="form-item__label label-input">
 									<p class="label-input__placeholder">Номер</p>
-									<input class="input" type="tel" required placeholder="+7 (___) __-__">
+									<input class="input" type="tel" placeholder="+7 (___) __-__" data-required="true"
+										data-min-length="11">
 								</label>
 							</div>
 							<div class="form__item form-item form-item--width--100">
 								<label class="form-item__label label-input">
 									<p class="label-input__placeholder">E-mail</p>
-									<input class="input" type="email" required
+									<input class="input" type="email" data-required="true"
 										placeholder="Введите Ваш электронный адрес">
 								</label>
 							</div>
 							<div class="form__item form-item form-item--width--100">
 								<label class="form-item__label label-input">
 									<p class="label-input__placeholder">Комментарий</p>
-									<textarea class="textarea" type="text" required
-										placeholder="Введите Ваш вопрос"></textarea>
+									<textarea class="textarea" type="text" placeholder="Введите Ваш вопрос"></textarea>
 								</label>
 							</div>
 							<div class="form__personal-data personal-data">
@@ -316,7 +317,8 @@
 						<div class="application-modal__form-item form-item form-item--width--100">
 							<label class="form-item__label label-input">
 								<p class="label-input__placeholder">Номер</p>
-								<input class="input" type="tel" required placeholder="+7 (___) __-__">
+								<input class="input" type="tel" placeholder="+7 (___) __-__" data-required="true"
+									data-min-length="11">
 							</label>
 						</div>
 						<button class="form__btn long-btn submit-btn" type="submit">Отправить<span></span></button>
