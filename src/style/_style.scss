@@ -147,12 +147,7 @@ stop {
 	font-weight: 700;
 	line-height: normal;
 }
-.description {
-	color: #9d9d9d;
-	font-size: 1.8rem;
-	font-weight: 500;
-	line-height: normal;
-}
+
 .form {
 	// .form__title
 	&__title {
@@ -342,6 +337,9 @@ body {
 		flex: 1;
 		font-size: 2.8rem;
 	}
+	.block_name {
+		margin-bottom: 2.4rem;
+	}
 	.form {
 		&__title {
 			font-size: 3.2rem;
@@ -426,5 +424,8 @@ body {
 		height: 6rem;
 
 		border: 0.2rem solid #fe921f;
+	}
+	.content_container {
+		flex-direction: column;
 	}
 }
