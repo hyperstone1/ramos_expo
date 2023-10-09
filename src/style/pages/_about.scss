@@ -19,7 +19,7 @@
 	&__title {
 		text-align: center;
 		width: 92.5rem;
-		margin-bottom: 4rem;
+		margin-bottom: 8rem;
 	}
 	// .about-intro__subtitle
 	&__subtitle {
@@ -42,7 +42,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: -1;
+		z-index: 1;
 
 		width: 100%;
 		height: 100%;
@@ -51,6 +51,22 @@
 	&__img {
 		position: absolute;
 		z-index: -1;
+		animation-name: imageAnimation;
+		animation-timing-function: ease-in-out;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+
+		img {
+			transition: transform 0.5s ease-out;
+		}
+
+		&:hover {
+			img {
+				transition: transform 0.5s ease-out;
+				transform: scale(1.2);
+			}
+		}
 
 		&--1 {
 			width: 18.2rem;
@@ -58,14 +74,15 @@
 
 			top: 0;
 			left: 39.1rem;
+			animation-delay: 0.2s;
 		}
 		&--2 {
 			width: 32.5rem;
 			height: 19.8rem;
 
-			left: 50%;
+			left: 64.8rem;
 			bottom: 10.8rem;
-			transform: translateX(-50%);
+			animation-delay: 0.4s;
 		}
 		&--3 {
 			width: 22.6rem;
@@ -73,6 +90,8 @@
 
 			bottom: 0;
 			left: 11.2rem;
+
+			animation-delay: 1s;
 		}
 		&--4 {
 			width: 35.6rem;
@@ -80,12 +99,16 @@
 
 			right: -20rem;
 			top: 12.4rem;
+
+			animation-delay: 1.5s;
 		}
 		&--5 {
 			width: 32rem;
 			height: 21.6rem;
 			left: -18.1rem;
 			top: 17.5rem;
+
+			animation-delay: 0.8s;
 
 			clip-path: polygon(74% 0%, 100% 30%, 100% 100%, 0% 100%, 0% 0%);
 		}
@@ -95,6 +118,7 @@
 
 			bottom: 6.2rem;
 			right: 5.5rem;
+			animation-delay: 0.2s;
 
 			clip-path: polygon(100% 0%, 100% 87%, 83% 100%, 0% 100%, 0% 10%, 22% 0%);
 		}
@@ -104,6 +128,7 @@
 
 			top: 4.8rem;
 			right: 35.6rem;
+			animation-delay: 0.4s;
 			clip-path: polygon(85% 0%, 100% 25%, 100% 100%, 0% 100%, 0% 0%);
 		}
 	}
@@ -113,6 +138,10 @@
 	// .about-business__inner
 	&__inner {
 		display: flex;
+		overflow: hidden;
+	}
+	&__main {
+		overflow: hidden;
 	}
 	// .about-business__content
 	&__content {
@@ -122,6 +151,7 @@
 	// .about-business__item
 	&__item {
 		width: 52rem;
+		overflow: hidden;
 	}
 	// .about-business__text
 	&__text {
@@ -143,13 +173,19 @@
 }
 .about-advantages {
 	margin-bottom: 20rem;
+	position: relative;
 	// .about-advantages__inner
 	&__inner {
 		display: flex;
+		overflow: hidden;
+	}
+
+	&__container {
+		position: relative;
 	}
 	// .about-advantages__main
 	&__main {
-		position: relative;
+		overflow: hidden;
 	}
 	// .about-advantages__item
 	&__item {
@@ -199,7 +235,7 @@
 	&__btn {
 		position: absolute;
 		top: 16.1rem;
-		left: -12.4rem;
+		left: 43.9rem;
 	}
 }
 .about-feedback {
@@ -231,6 +267,39 @@
 	// .about-feedback__form
 	&__form {
 		margin-top: 7.5rem;
+	}
+}
+.about-intro-animation {
+	top: 21rem;
+	left: 28%;
+	z-index: -1;
+
+	.about__blocks-item {
+		width: 78.2164rem;
+		height: 78.2164rem;
+	}
+}
+.about-advantages-animation {
+	transform: rotate(45deg) scale(1.2);
+	top: 40rem;
+	left: -80rem;
+	width: 110.941rem;
+	height: 130.8809rem;
+
+	.services__blocks-item {
+		width: 67.089rem;
+		height: 92.7639rem;
+	}
+}
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+		transition: opacity 0.2s linear;
+	}
+
+	100% {
+		opacity: 1;
+		transition: opacity 0.2s linear;
 	}
 }
 
@@ -435,6 +504,40 @@
 		// .about-feedback__form
 		&__form {
 			margin-top: 0;
+		}
+	}
+	.about-intro-animation {
+		top: 45rem;
+		left: 15%;
+		z-index: -1;
+
+		.about__blocks-item {
+			width: 52.191rem;
+			height: 52.191rem;
+		}
+	}
+	.about-advantages-animation {
+		transform: rotate(-135deg) scale(1);
+		top: 95rem;
+		left: 60rem;
+		width: 82.14rem;
+		height: 96.9034rem;
+
+		.services__blocks-item {
+			width: 67.089rem;
+			height: 92.7639rem;
+
+			&:nth-child(1) {
+				animation: blockMove1 5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			}
+
+			&:nth-child(2) {
+				animation: blockMove2 5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			}
+
+			&:nth-child(3) {
+				animation: blockMove3 5s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+			}
 		}
 	}
 }

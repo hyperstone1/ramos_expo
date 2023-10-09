@@ -147,12 +147,22 @@ stop {
 	font-weight: 700;
 	line-height: normal;
 }
-.description {
-	color: #9d9d9d;
-	font-size: 1.8rem;
-	font-weight: 500;
-	line-height: normal;
+
+.anim {
+	&.show .anim-el {
+		transition:
+			transform 1s ease-out,
+			opacity 1s ease-in;
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
+
+.anim-el {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
 .form {
 	// .form__title
 	&__title {
@@ -215,7 +225,8 @@ stop {
 
 .error-text {
 	color: #e7284a;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
+	margin-top: 0.5rem;
 
 	position: absolute;
 	right: 0;
@@ -395,6 +406,7 @@ body {
 
 	.error-text {
 		font-size: 2.4rem;
+		margin-top: 0;
 	}
 
 	.input {
