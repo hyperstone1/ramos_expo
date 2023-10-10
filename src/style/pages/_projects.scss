@@ -146,6 +146,7 @@
 	}
 
 	&--element {
+		position: relative;
 		justify-content: center;
 		align-items: center;
 
@@ -211,6 +212,19 @@
 	// .project-info__date
 	&__date {
 		color: #242424;
+	}
+}
+
+.projects-item-animation {
+	width: 13.0548rem;
+	height: 12.9817rem;
+	transform: rotate(30deg) scale(0.2);
+	top: 15rem;
+	left: 10rem;
+
+	.services__blocks-item {
+		height: 50rem;
+		border: 0.5rem solid #c7c7c7;
 	}
 }
 
