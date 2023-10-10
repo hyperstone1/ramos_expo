@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const panels = document.querySelectorAll('.our_projects__list-item--description');
   const projects = document.querySelectorAll('.our_projects__list-item--title');
   const imagesProjects = document.querySelectorAll('.our_projects__list-img');
+  const projectsBtns = document.querySelectorAll('.our_projects__list-item--btn');
+
   let isProcessingClick = false;
   const width = window.innerWidth;
 
@@ -32,6 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
                   item.style.webkitLineClamp = '4';
                   item.style.maxHeight = item.scrollHeight + 'px';
                   if (width < 769) {
+                    projectsBtns.forEach((item) => {
+                      item.style.display = 'none';
+                    });
                     btn.style.display = 'block';
                     btn.addEventListener('click', () => {
                       console.log('btn clicj');
@@ -56,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(item === project);
             const container = item.closest('.our_projects__list-item');
             const img = container.querySelector('.our_projects__list-img');
+            const btn = container.querySelector('.our_projects__list-item--btn');
             console.log('img: ', img);
             console.log('container: ', container);
             if (item === project) {
@@ -64,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
               container.classList.remove('active');
               img.classList.remove('visible');
+              btn.style.display = 'none';
             }
           });
         } else {
