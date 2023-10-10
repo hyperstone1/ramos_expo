@@ -3,9 +3,10 @@
 // });
 document.addEventListener('DOMContentLoaded', () => {
   const panels = document.querySelectorAll('.our_projects__list-item--description');
-  const projects = document.querySelectorAll('.our_projects__list-item');
+  const projects = document.querySelectorAll('.our_projects__list-item--title');
   const imagesProjects = document.querySelectorAll('.our_projects__list-img');
   let isProcessingClick = false;
+  const width = window.innerWidth;
 
   projects.forEach((project) => {
     project.addEventListener('click', async (e) => {
@@ -23,13 +24,26 @@ document.addEventListener('DOMContentLoaded', () => {
             panels.forEach((item) => {
               const isActivePanel =
                 item === container.querySelector('.our_projects__list-item--description');
+              const btn = container.querySelector('.our_projects__list-item--btn');
 
               if (isActivePanel) {
                 const computedStyles = window.getComputedStyle(item);
                 if (computedStyles.maxHeight === '0px' || computedStyles.maxHeight === '0') {
+                  item.style.webkitLineClamp = '4';
                   item.style.maxHeight = item.scrollHeight + 'px';
+                  if (width < 769) {
+                    btn.style.display = 'block';
+                    btn.addEventListener('click', () => {
+                      console.log('btn clicj');
+                      item.style.webkitLineClamp = 'inherit';
+                      btn.style.display = 'none';
+                    });
+                  }
                 } else {
                   item.style.maxHeight = 0;
+                  if (width < 769) {
+                    btn.style.display = 'none';
+                  }
                 }
               } else {
                 item.style.maxHeight = 0;
@@ -40,12 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           projects.forEach((item) => {
             console.log(item === project);
-            const img = item.querySelector('.our_projects__list-img');
+            const container = item.closest('.our_projects__list-item');
+            const img = container.querySelector('.our_projects__list-img');
+            console.log('img: ', img);
+            console.log('container: ', container);
             if (item === project) {
-              item.classList.toggle('active');
+              container.classList.toggle('active');
               img.classList.toggle('visible');
             } else {
-              item.classList.remove('active');
+              container.classList.remove('active');
               img.classList.remove('visible');
             }
           });
