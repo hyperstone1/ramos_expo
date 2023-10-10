@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .title {
   font-family: 'Akrobat';
   color: #242424;
@@ -23,10 +26,15 @@ stop {
   text-transform: uppercase;
 
   &--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
   svg {
     width: 100%;
@@ -47,7 +55,11 @@ stop {
     }
   }
 }
-
+.text--opacity {
+  color: transparent;
+  -webkit-text-stroke: 1.2px #242424;
+  text-stroke: 1.2px #242424;
+}
 .long-btn {
   color: #e84b0f;
   font-family: 'Gilroy';
