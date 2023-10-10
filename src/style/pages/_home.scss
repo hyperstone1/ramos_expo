@@ -716,8 +716,6 @@
         line-height: normal;
         text-transform: uppercase;
       }
-      &--name {
-      }
     }
   }
 }
@@ -1368,6 +1366,9 @@
 
     &-btn {
       margin-top: 8.6rem;
+      &--mob{
+        display: none;
+      }
     }
     &-item {
       width: 38.2rem;
@@ -1397,7 +1398,7 @@
       &--date {
         color: #e7284a;
         font-family: 'Akrobat';
-        font-size: 2rem;
+        font-size: 3.6rem;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
@@ -1864,6 +1865,9 @@
     }
   }
   .news {
+    &_container{
+      padding-bottom: 17rem;
+    }
     &__blocks {
       height: 110.8rem;
       width: 75.3rem;
@@ -1882,6 +1886,17 @@
       }
     }
     &__list {
+      &-btn{
+        display: none;
+        &--mob{
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 2;
+
+        }
+      }
       &-item {
         width: 44.8rem;
         .news__list-img {
