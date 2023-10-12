@@ -22,10 +22,6 @@ $(document).ready(function () {
 		modules: [Navigation, Thumbs],
 		slidesPerView: 'auto',
 		spaceBetween: `${remToPx(3)}`,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
 		thumbs: {
 			swiper: detailSwiperThumb,
 		},

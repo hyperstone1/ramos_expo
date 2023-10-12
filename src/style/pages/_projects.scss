@@ -313,6 +313,12 @@
 			font-size: 3.2rem;
 			line-height: normal; /* 133.333% */
 		}
+
+		&__btn {
+			position: absolute;
+			top: 0;
+			right: 8.8rem;
+		}
 	}
 	.project-info {
 		font-size: 3.2rem;
