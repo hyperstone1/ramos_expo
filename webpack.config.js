@@ -82,7 +82,7 @@ module.exports = {
         ],
       }),
     ],
-    minimize: false, // Отключение минификации
+    minimize: true, // Отключение минификации
     // mangle: false, // Отключение замены имен переменных
   },
   plugins: [

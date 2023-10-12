@@ -350,6 +350,25 @@ body {
 		width: 24.4rem;
 		height: 24.4rem;
 		font-size: 2.8rem;
+		&:hover{
+			svg {
+				path {
+					//   fill: #fccb17;
+					transition: fill 0.4s ease-in-out;
+				}
+				stop {
+					&:nth-child(1){
+						stop-color: #D61607;
+					}
+					&:nth-child(2){
+						stop-color: #F87717;
+					}
+					&:nth-child(3){
+						stop-color: #FECE24;
+					}
+				}
+			}
+		}
 	}
 	.long-btn {
 		font-size: 3.2rem;

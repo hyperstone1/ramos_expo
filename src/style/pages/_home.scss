@@ -434,18 +434,18 @@
       height: 95rem;
       border: 1px solid #c7c7c7;
       &:nth-child(1) {
-        animation: aboutAnim1 8s linear infinite;
+        animation: aboutAnim1 13s linear infinite;
         animation-duration: -1000;
       }
       &:nth-child(2) {
-        animation: aboutAnim2 9s linear infinite;
+        animation: aboutAnim2 14s linear infinite;
         animation-duration: -500;
       }
       &:nth-child(3) {
-        animation: aboutAnim3 9s cubic-bezier(0.77, 0.91, 0.71, 0.37) infinite;
+        animation: aboutAnim3 14s cubic-bezier(0.77, 0.91, 0.71, 0.37) infinite;
       }
       &:nth-child(4) {
-        animation: aboutAnim4 7s linear infinite;
+        animation: aboutAnim4 11s linear infinite;
         animation-duration: -1000;
       }
     }
@@ -643,6 +643,9 @@
 
 .news {
   position: relative;
+  &_container {
+    padding-left: 14rem;
+  }
   &__blocks {
     position: absolute;
     top: 0;
@@ -669,6 +672,7 @@
     }
   }
   &__text {
+    padding-left: 1rem;
     display: flex;
     justify-content: space-between;
     &-title {
@@ -678,6 +682,8 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 1rem;
 
     &-btn {
       margin-top: 8.6rem;
@@ -687,6 +693,13 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        .news__list-img {
+          transform: rotate(2.785deg);
+        }
+      }
       &:nth-child(1) {
         .news__list-img {
           height: 28.5rem;
@@ -702,6 +715,10 @@
           height: 28.5rem;
         }
       }
+    }
+    &-img {
+      transform: rotate(0deg);
+      transition: transform 0.3s ease-in-out;
     }
     &-text {
       display: flex;
@@ -825,6 +842,12 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      overflow: inherit;
+      &:hover {
+        .services__list-img {
+          transform: rotate(2.785deg);
+        }
+      }
       &--column {
         display: flex;
         align-items: flex-end;
@@ -834,6 +857,8 @@
     &-img {
       width: 38.3rem;
       height: 52.8rem;
+      transform: rotate(0deg);
+      transition: transform 0.3s ease-in-out;
       &--border {
         position: absolute;
         top: 0;
@@ -863,8 +888,10 @@
           width: 100%;
           height: 100%;
           z-index: 2;
+          opacity: 1;
+          transition: 0.3s cubic-bezier(0.73, 0.06, 1, 0.93);
           img {
-            object-fit: cover;
+            object-fit: fill;
             height: 100%;
           }
         }
@@ -886,6 +913,9 @@
           }
           .services__list-img--border {
             transform: rotate(0deg);
+          }
+          .services__list-img--column--back {
+            opacity: 0;
           }
         }
         img {
@@ -1081,6 +1111,7 @@
       }
     }
     &__list {
+      flex-direction: row-reverse;
       &-mark {
         top: 36.4rem;
         left: -8rem;
@@ -1537,18 +1568,7 @@
         width: 79.5rem;
         height: 43.9rem;
         transition: transform 0.3s ease-in-out;
-        &--back {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 2;
-          img {
-            object-fit: cover;
-            height: 100%;
-          }
-        }
+
         &--inner {
           width: 79.5rem;
           height: 43.9rem;
@@ -1568,8 +1588,6 @@
           .services__list-img--border {
             transform: rotate(0deg);
           }
-        }
-        img {
         }
       }
     }
@@ -1858,6 +1876,7 @@
   .news {
     &_container {
       padding-bottom: 17rem;
+      padding-left: 3rem;
     }
     &__blocks {
       height: 110.8rem;
@@ -1872,12 +1891,13 @@
     }
     &__text {
       flex-direction: column;
-
+      padding-left: 0;
       &-title {
         width: 100%;
       }
     }
     &__list {
+      padding: 0;
       &-btn {
         display: none;
         &--mob {
@@ -1890,6 +1910,11 @@
       }
       &-item {
         width: 44.8rem;
+        &:hover {
+          .news__list-img {
+            transform: rotate(0deg);
+          }
+        }
         .news__list-img {
           &:nth-child(1) {
             height: auto;
@@ -2004,7 +2029,8 @@
       }
     }
     &__list {
-      gap: 11.6rem;
+      // gap: 11.6rem;
+      gap: 0;
       &-row {
         flex-direction: column;
         gap: 5.6rem;
@@ -2028,6 +2054,7 @@
         }
       }
       &-column {
+        margin-top: 10rem;
         &--description {
           width: 100%;
         }
@@ -2051,6 +2078,8 @@
         position: absolute;
         bottom: -12rem;
         margin: 0;
+        width: 20rem;
+        height: 20rem;
       }
       &-text {
         gap: 0.4rem;
