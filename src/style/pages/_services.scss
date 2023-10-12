@@ -54,6 +54,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    &-close {
+      display: none;
+    }
     &-img {
       width: 66rem;
       height: 60.8rem;
@@ -148,6 +151,7 @@
     &__content {
       flex-direction: column;
       gap: 1.6rem;
+
       &-img {
         width: 33.2rem;
         height: 35.4rem;
