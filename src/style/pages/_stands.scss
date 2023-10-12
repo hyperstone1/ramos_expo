@@ -363,10 +363,17 @@
         }
         &--btn {
           display: none;
-          color:  #e84b0f;
+          color: #e84b0f;
           font-size: 3.2rem;
           font-weight: 600;
           line-height: normal;
+          &--collapse {
+            display: none;
+            color: #e84b0f;
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: normal;
+          }
         }
         &--arrow {
           position: absolute;
@@ -439,6 +446,12 @@
       &-item {
         width: 32.8rem;
         gap: 2.4rem;
+        &-download {
+          top: -5rem;
+          left: 1rem;
+          width: 12.8rem;
+          height: 12.8rem;
+        }
         &--number {
           font-size: 4rem;
           font-weight: 700;
