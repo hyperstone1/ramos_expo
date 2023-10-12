@@ -307,6 +307,7 @@ stop {
 }
 
 .label-checkbox {
+	cursor: pointer;
 	input {
 		appearance: none;
 		position: absolute;
@@ -424,8 +425,8 @@ body {
 	}
 
 	.error-text {
-		font-size: 2.4rem;
-		margin-top: 0;
+		font-size: 2.8rem;
+		margin-top: 1rem;
 	}
 
 	.input {
