@@ -170,6 +170,18 @@
     overflow: hidden;
     &-wrapper {
       position: relative;
+      cursor: pointer;
+      &:hover {
+        .banner__main-img--back {
+          transform: rotate(0deg);
+        }
+        .banner__main-img img {
+          transform: scale(1.2);
+        }
+        .banner__main-border {
+          opacity: 0;
+        }
+      }
     }
     &-item {
       height: 75.2rem;
@@ -197,10 +209,13 @@
     }
     &-border {
       position: absolute;
+      margin-left: -0.1rem;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100.5%;
       height: 100%;
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;
       img {
         height: 100%;
       }
@@ -223,7 +238,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        margin-left: -0.1rem;
+        width: 100.5%;
         height: 100%;
         // clip-path: url('#clip_banner');
         transform: rotate(20.921deg);
@@ -270,7 +286,7 @@
         top: 59.2%;
         left: 15rem;
         transform: translate(0, -50%);
-        font-family: 'Akrobat';
+        font-family: "Akrobat";
         font-size: 15rem;
         font-weight: 800;
         line-height: normal;
@@ -515,7 +531,7 @@
       gap: 1rem;
       &--title {
         color: #242424;
-        font-family: 'Akrobat';
+        font-family: "Akrobat";
         font-size: 2rem;
         font-weight: 700;
         line-height: normal;
@@ -523,7 +539,7 @@
       }
       &--subtitle {
         color: #e7284a;
-        font-family: 'Gilroy';
+        font-family: "Gilroy";
         font-size: 1.8rem;
         font-weight: 400;
         line-height: normal;
@@ -591,7 +607,7 @@
       }
     }
     &-name {
-      font-family: 'Akrobat';
+      font-family: "Akrobat";
       font-size: 2rem;
       font-weight: 700;
       line-height: normal;
@@ -726,7 +742,7 @@
       gap: 1rem;
       &--date {
         color: #e7284a;
-        font-family: 'Akrobat';
+        font-family: "Akrobat";
         font-size: 2rem;
         font-weight: 700;
         line-height: normal;
@@ -813,6 +829,11 @@
         // cubic-bezier(0.165, 0.84, 0.44, 1)
         animation: blockMove3 55s cubic-bezier(0.35, 0.54, 0.95, 0.73) infinite;
       }
+    }
+  }
+  &__main {
+    &-title {
+      margin-bottom: 0;
     }
   }
   &__list {
@@ -1930,7 +1951,7 @@
       &-text {
         &--date {
           color: #e7284a;
-          font-family: 'Akrobat';
+          font-family: "Akrobat";
           font-size: 3.6rem;
           font-weight: 700;
           line-height: normal;
@@ -2006,17 +2027,20 @@
         &:nth-child(1) {
           transform: translate(30rem, -30rem);
           //   animation: none;
-          animation: blockMoveMob1 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: blockMoveMob1 7s cubic-bezier(0.165, 0.84, 0.44, 1)
+            infinite;
         }
         &:nth-child(2) {
           //   animation: none;
           transform: translate(15rem, -11rem);
-          animation: blockMoveMob2 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: blockMoveMob2 7s cubic-bezier(0.165, 0.84, 0.44, 1)
+            infinite;
         }
         &:nth-child(3) {
           //   animation: none;
           transform: translate(0rem, 0rem);
-          animation: blockMoveMob3 7s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+          animation: blockMoveMob3 7s cubic-bezier(0.165, 0.84, 0.44, 1)
+            infinite;
         }
       }
     }
