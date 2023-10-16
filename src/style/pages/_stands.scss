@@ -180,6 +180,48 @@
     }
   }
 }
+@keyframes stagesMove1 {
+  0% {
+    transform: translate(0rem, 32rem);
+  }
+  25% {
+    transform: translate(6rem, 32rem);
+  }
+  50% {
+    transform: translate(28rem, 32rem);
+  }
+  100% {
+    transform: translate(0rem, 32rem);
+  }
+}
+@keyframes stagesMove2 {
+  0% {
+    transform: translate(14rem, 16rem);
+  }
+  25% {
+    transform: translate(34rem, 16rem);
+  }
+  50% {
+    transform: translate(24rem, 16rem);
+  }
+  100% {
+    transform: translate(14rem, 16rem);
+  }
+}
+@keyframes stagesMove3 {
+  0% {
+    transform: translate(28rem, 0rem);
+  }
+  25% {
+    transform: translate(20rem, 0rem);
+  }
+  50% {
+    transform: translate(38rem, 0rem);
+  }
+  100% {
+    transform: translate(28rem, 0rem);
+  }
+}
 .stages {
   position: relative;
   &__blocks {
@@ -193,14 +235,21 @@
       width: 67rem;
       height: 92.7rem;
       border: 1px solid #c7c7c7;
+      background-color: transparent;
       &:nth-child(1) {
         transform: translate(0rem, 32rem);
+        animation: stagesMove1 7s cubic-bezier(0.23, 1, 0.72, 0.8) infinite;
+        z-index: 1;
       }
       &:nth-child(2) {
         transform: translate(14rem, 16rem);
+        animation: stagesMove2 7s cubic-bezier(0.23, 1, 0.72, 0.8) infinite;
+        z-index: 2;
       }
       &:nth-child(3) {
         transform: translate(28rem, 0rem);
+        animation: stagesMove3 7s cubic-bezier(0.23, 1, 0.72, 0.8) infinite;
+        z-index: 3;
       }
     }
   }
