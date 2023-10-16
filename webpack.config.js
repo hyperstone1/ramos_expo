@@ -17,12 +17,10 @@ const entryPoints = {
 	detail: path.resolve(__dirname, 'src', 'index.js'),
 	services: path.resolve(__dirname, 'src', 'index.js'),
 	stands: path.resolve(__dirname, 'src', 'index.js'),
-	// tables: path.resolve(__dirname, 'src', 'index.js'),
-	//   contacts: path.resolve(__dirname, 'src', 'index.js'),
 	// Добавьте другие страницы здесь
 };
 
-// Создайте экземпляры HtmlWebpackPlugin для каждой страницы
+// Создаем экземпляры HtmlWebpackPlugin для каждой страницы
 const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
 	return new HtmlWebpackPlugin({
 		template: path.resolve(__dirname, 'src', `${entryName}.html`),
@@ -58,16 +56,16 @@ module.exports = {
 	},
 	optimization: {
 		minimizer: [
-			'...',
+			'...', // Здесь могут быть другие плагины для минимизации (например, TerserPlugin для минификации JavaScript)
 			new ImageMinimizerPlugin({
 				minimizer: {
-					implementation: ImageMinimizerPlugin.imageminMinify,
+					implementation: ImageMinimizerPlugin.imageminMinify, // Выбор реализации минимизации изображений
 					options: {
 						plugins: [
-							'imagemin-gifsicle',
-							'imagemin-mozjpeg',
-							'imagemin-pngquant',
-							'imagemin-svgo',
+							'imagemin-gifsicle', // Плагин для оптимизации GIF изображений
+							'imagemin-mozjpeg',  // Плагин для оптимизации JPEG изображений
+							'imagemin-pngquant', // Плагин для оптимизации PNG изображений
+							'imagemin-svgo',     // Плагин для оптимизации SVG изображений
 						],
 					},
 				},
