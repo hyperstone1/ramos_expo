@@ -2052,6 +2052,11 @@
         }
       }
     }
+    &__main {
+      &-title {
+        margin-bottom: 6.4rem;
+      }
+    }
     &__list {
       // gap: 11.6rem;
       gap: 0;
@@ -2067,6 +2072,12 @@
       &-item {
         width: 100%;
         gap: 1.6rem;
+
+        &:hover {
+          .services__list-img {
+            transform: rotate(0deg);
+          }
+        }
         &--last {
           .services__list-text--description {
             width: 41rem;
@@ -2107,6 +2118,10 @@
       }
       &-text {
         gap: 0.4rem;
+        &.anim-el {
+          transform: translateX(0);
+          opacity: 1;
+        }
         &--description {
           width: 55.2rem;
         }
