@@ -14,15 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let isProcessingClick = false;
   const width = window.innerWidth;
-  projectsItems[0].classList.add("active");
-  imagesProjects[0].classList.add("visible");
-  if (width < 769) {
-    const btn = projectsItems[0].querySelector(".our_projects__list-item--btn");
-    btn.style.display = "block";
+  if (projectsItems.length > 0 && imagesProjects.length > 0) {
+    projectsItems[0].classList.add("active");
+    imagesProjects[0].classList.add("visible");
+    if (width < 769) {
+      const btn = projectsItems[0].querySelector(
+        ".our_projects__list-item--btn"
+      );
+      btn.style.display = "block";
+    }
+    setTimeout(() => {
+      panels[0].style.maxHeight = panels[0].scrollHeight + "px";
+    }, 100);
   }
-  setTimeout(() => {
-    panels[0].style.maxHeight = panels[0].scrollHeight + "px";
-  }, 100);
 
   projects.forEach((project) => {
     project.addEventListener("click", async (e) => {
