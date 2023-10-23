@@ -1,24 +1,26 @@
 $(document).ready(function () {
+  $(document).on("keyup", (evt) => {
+    evt.keyCode === 27 ? closeModal() : null;
+  });
 
-	$(document).on('keyup', (evt) => {
-		evt.keyCode === 27 ? closeModal() : null;
-	})
+  $('[data-modal="application"]').on("click", () => {
+    $(".application-modal").addClass("active");
+  });
+  $('[data-modal="application-florist"]').on("click", () => {
+    $(".application-modal--florist").addClass("active");
+  });
 
-	$('[data-modal="application"]').on('click', () => {
-		$('.application-modal').addClass('active');
-	});
+  $("[data-modal]").on("click", () => {
+    $("body").addClass("lock");
+  });
 
-	$('[data-modal]').on('click', () => {
-		$('body').addClass('lock');
-	})
+  $(".modal-back").on("click", closeModal);
+  $(".modal-exit").on("click", closeModal);
 
-	$('.modal-back').on('click', closeModal);
-	$('.modal-exit').on('click', closeModal);
-
-	function closeModal() {
-		$('.modal').removeClass('active');
-		$('body').removeClass('lock');
-		$('.modal').find('.modal-content--first').addClass('active');
-		$('.modal').find('.modal-content--second').removeClass('active');
-	}
-})
+  function closeModal() {
+    $(".modal").removeClass("active");
+    $("body").removeClass("lock");
+    $(".modal").find(".modal-content--first").addClass("active");
+    $(".modal").find(".modal-content--second").removeClass("active");
+  }
+});
