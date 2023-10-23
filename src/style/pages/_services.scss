@@ -72,6 +72,9 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          // width: 100%;
+          // height: 127%;
+          // margin-top: -3rem;
         }
       }
       width: 66rem;
@@ -128,7 +131,7 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      right: -5rem;
+      right: 0rem;
       top: -9rem;
     }
     &-show {
@@ -148,6 +151,18 @@
     &-img {
       width: 23.5rem;
       height: 27.8rem;
+      &:nth-child(1) {
+        overflow: hidden;
+        clip-path: polygon(23% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 17%);
+      }
+      &:nth-child(3) {
+        overflow: hidden;
+        clip-path: polygon(77% 0, 100% 17%, 100% 50%, 100% 100%, 0 100%, 0 0);
+      }
+      &:nth-child(5) {
+        overflow: hidden;
+        clip-path: polygon(23% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 17%);
+      }
       cursor: pointer;
       img {
         height: 100%;
@@ -270,6 +285,7 @@
       &-img {
         width: 33.2rem;
         height: 32.2rem;
+
         &:nth-child(2) {
           align-self: flex-end;
           width: 33.2rem;
